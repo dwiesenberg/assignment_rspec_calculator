@@ -1,4 +1,7 @@
 class Calculator
+
+  attr_reader :stringify
+
   def initialize(stringify = false)
     @memory = nil
     @stringify = stringify
@@ -56,3 +59,5 @@ class Calculator
     @stringify ? result.to_s : result
   end
 end
+
+
